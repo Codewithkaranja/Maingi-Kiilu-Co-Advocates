@@ -1,0 +1,643 @@
+ /* CSS Variables for Brand Colors */
+      :root {
+        --navy: #002b5c;
+        --charcoal: #333333;
+        --gold: #b38b59;
+        --light-gray: #f8f9fa;
+        --white: #ffffff;
+      }
+
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        color: var(--charcoal);
+        background-color: var(--white);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Garamond", "Times New Roman", serif;
+        color: var(--navy);
+        margin-bottom: 1rem;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--gold);
+        color: var(--white);
+        padding: 12px 30px;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .btn:hover {
+        background-color: var(--navy);
+        transform: translateY(-2px);
+      }
+
+      .btn-large {
+        padding: 15px 40px;
+        font-size: 1.1rem;
+      }
+
+      .section {
+        padding: 80px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+        position: relative;
+      }
+
+      .section-title:after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background-color: var(--gold);
+      }
+
+     /* ======= Header Styling ======= */
+header {
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); /* Softer, premium shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Header Container Layout */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ======= Logo Section ======= */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* ======= Navigation Menu ======= */
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--charcoal);
+  font-size: 16px;
+  padding: 8px 2px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--gold);
+  border-bottom: 2px solid var(--gold);
+}
+
+/* ======= Mobile Menu Button ======= */
+.mobile-menu {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: var(--charcoal);
+}
+
+/* ======= Button in Navigation ======= */
+nav ul li .btn {
+  background-color: var(--gold);
+  color: var(--white);
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li .btn:hover {
+  background-color: var(--navy);
+}
+
+/* ======= Responsive Styling ======= */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .logo img {
+    height: 90px;
+  }
+}
+
+      /* Page Header */
+      .page-header {
+        background: linear-gradient(rgba(0, 43, 92, 0.8), rgba(0, 43, 92, 0.8)),
+          url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80");
+        background-size: cover;
+        background-position: center;
+        color: var(--white);
+        padding: 150px 0 80px;
+        text-align: center;
+      }
+
+      .page-header h1 {
+        font-size: 2.5rem;
+        color: var(--white);
+        margin-bottom: 20px;
+      }
+
+      .breadcrumb {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      .breadcrumb li {
+        margin: 0 10px;
+        color: var(--white);
+      }
+
+      .breadcrumb li a {
+        color: var(--gold);
+        text-decoration: none;
+      }
+
+      /* Contact Intro */
+      .contact-intro {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 50px;
+      }
+
+      /* Contact Methods */
+      .contact-methods {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+      }
+
+      .contact-card {
+        background-color: var(--white);
+        border-radius: 8px;
+        padding: 40px 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        transition: transform 0.3s ease;
+        border-top: 4px solid var(--gold);
+      }
+
+      .contact-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .contact-icon {
+        font-size: 50px;
+        color: var(--gold);
+        margin-bottom: 20px;
+      }
+
+      .contact-card h3 {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+      }
+
+      .contact-card p {
+        margin-bottom: 20px;
+        color: #666;
+      }
+
+      /* Contact Form & Info */
+      .contact-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 50px;
+        align-items: start;
+      }
+
+      .contact-form-container {
+        background-color: var(--white);
+        border-radius: 8px;
+        padding: 40px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: var(--navy);
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+      }
+
+      .form-control:focus {
+        outline: none;
+        border-color: var(--gold);
+      }
+
+      textarea.form-control {
+        min-height: 150px;
+        resize: vertical;
+      }
+
+      .contact-info-sidebar {
+        background-color: var(--light-gray);
+        padding: 40px 30px;
+        border-radius: 8px;
+        border-left: 4px solid var(--gold);
+      }
+
+      .info-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 30px;
+      }
+
+      .info-icon {
+        font-size: 24px;
+        color: var(--gold);
+        margin-right: 15px;
+        margin-top: 5px;
+      }
+
+      .info-content h4 {
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+      }
+
+      .office-hours {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+      }
+
+      .office-hours h4 {
+        margin-bottom: 15px;
+      }
+
+      .hours-list {
+        list-style: none;
+      }
+
+      .hours-list li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #eee;
+      }
+
+      /* Map Section */
+      .map-section {
+        background-color: var(--light-gray);
+      }
+
+      .map-container {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        height: 400px;
+        background-color: #e9ecef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .map-placeholder {
+        text-align: center;
+        color: var(--navy);
+      }
+
+      .map-placeholder i {
+        font-size: 50px;
+        margin-bottom: 15px;
+        color: var(--gold);
+      }
+
+      /* Emergency Section */
+      .emergency-section {
+        text-align: center;
+        background: linear-gradient(rgba(0, 43, 92, 0.9), rgba(0, 43, 92, 0.9)),
+          url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80");
+        background-size: cover;
+        background-position: center;
+        color: var(--white);
+        padding: 60px 0;
+        border-radius: 8px;
+      }
+
+      .emergency-section h2 {
+        color: var(--white);
+        margin-bottom: 20px;
+      }
+
+      .emergency-section p {
+        max-width: 700px;
+        margin: 0 auto 30px;
+        font-size: 1.1rem;
+      }
+
+      /* FAQ Section */
+      .faq-item {
+        margin-bottom: 20px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .faq-question {
+        padding: 20px;
+        background-color: var(--light-gray);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+      }
+
+      .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+      }
+
+      .faq-answer.active {
+        padding: 20px;
+        max-height: 500px;
+      }
+
+      .faq-toggle {
+        transition: transform 0.3s ease;
+      }
+
+      .faq-item.active .faq-toggle {
+        transform: rotate(180deg);
+      }
+
+           /* ===== Footer Section ===== */
+footer {
+  background-color: var(--charcoal);
+  color: var(--white);
+  padding: 70px 0 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 45px;
+  margin-bottom: 50px;
+}
+
+/* ===== Logo Styling ===== */
+.footer-logo img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+  filter: brightness(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ===== About Text ===== */
+.footer-about p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ddd;
+  max-width: 320px;
+}
+
+/* ===== Footer Headings ===== */
+.footer-links h3,
+.footer-services h3,
+.footer-contact h3 {
+  color: var(--gold);
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Lists Styling ===== */
+.footer-links ul,
+.footer-services ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li,
+.footer-services ul li,
+.footer-contact ul li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+/* ===== Hyperlink Styling (all links, mail, tel, map) ===== */
+.footer-links a,
+.footer-services a,
+.footer-contact a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-services a:hover,
+.footer-contact a:hover {
+  color: var(--gold);
+  padding-left: 4px;
+}
+
+/* ===== Contact Icons ===== */
+.footer-contact ul li i {
+  margin-right: 10px;
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+/* ===== Copyright & Credit Section ===== */
+copyright,
+.credit {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.credit {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.credit span {
+  color: red;
+}
+
+.credit a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .footer-logo img {
+    width: 150px;
+  }
+  .footer-content {
+    gap: 35px;
+  }
+  .footer-about p {
+    text-align: center;
+  }
+  .footer-content > div {
+    text-align: center;
+  }
+  .footer-contact ul li,
+  .footer-services ul li,
+  .footer-links ul li {
+    justify-content: center;
+  }
+}
+      /* Responsive Styles */
+      @media (max-width: 992px) {
+        .contact-main {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-info-sidebar {
+          order: -1;
+        }
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          display: none;
+          position: absolute;
+          top: 70px;
+          left: 0;
+          width: 100%;
+          background-color: var(--white);
+          flex-direction: column;
+          padding: 20px;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul.active {
+          display: flex;
+        }
+
+        nav ul li {
+          margin: 10px 0;
+        }
+
+        .mobile-menu {
+          display: block;
+        }
+
+        .page-header {
+          padding: 130px 0 60px;
+        }
+
+        .page-header h1 {
+          font-size: 2rem;
+        }
+
+        .section {
+          padding: 60px 0;
+        }
+
+        .contact-methods {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-form-container {
+          padding: 30px 20px;
+        }
+      }

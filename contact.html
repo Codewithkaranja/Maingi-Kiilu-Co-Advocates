@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Mutinda and Musyoka Company Advocates</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <img
+            src="musyoka&mutinda logo.png"
+            alt="Musyoka & Mutinda Advocates Logo"
+            class="logo-img"
+          />
+        </a>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Legal Insights</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="contact.html" class="btn">Schedule Consultation</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Our Legal Team</h1>
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Intro -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-intro">
+          <h2 class="section-title">Get In Touch With Us</h2>
+          <p>
+            We're here to help with your legal needs. Whether you have questions
+            about our services, need to schedule a consultation, or require
+            immediate legal assistance, our team is ready to assist you.
+          </p>
+        </div>
+
+        <!-- Contact Methods -->
+        <div class="contact-methods">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>Speak directly with our legal team during business hours</p>
+            <a href="tel:0723562484" class="btn">0723562484</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>Send us your inquiries and we'll respond within 24 hours</p>
+            <a href="mailto:info@mutindaandmusyoka.co.ke" class="btn"
+              >Send Email</a
+            >
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Visit Our Office</h3>
+            <p>Schedule an appointment to meet with us in person</p>
+            <a href="#location" class="btn">Get Directions</a>
+          </div>
+        </div>
+
+        <!-- Contact Form & Info -->
+        <div class="contact-main">
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <p>
+              Fill out the form below and we'll get back to you as soon as
+              possible.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" class="form-control">
+                  <option value="">Select a service</option>
+                  <option value="litigation">
+                    Litigation & Dispute Resolution
+                  </option>
+                  <option value="corporate">Corporate & Commercial Law</option>
+                  <option value="real-estate">
+                    Conveyancing & Real Estate
+                  </option>
+                  <option value="family">Family & Succession Law</option>
+                  <option value="criminal">Criminal Defense</option>
+                  <option value="human-rights">
+                    Constitutional & Human Rights
+                  </option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" class="form-control" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-large">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info-sidebar">
+            <h3>Contact Information</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>Our Office</h4>
+                <p>Hebron Complex, First Floor<br />Machakos, Kenya</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>Phone Number</h4>
+                <p>0723562484</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h4>Email Address</h4>
+                <p>info@mutindaandmusyoka.co.ke</p>
+              </div>
+            </div>
+
+            <div class="office-hours">
+              <h4>Office Hours</h4>
+              <ul class="hours-list">
+                <li>
+                  <span>Monday - Thursday</span>
+                  <span>8:00 AM - 5:00 PM</span>
+                </li>
+                <li>
+                  <span>Friday</span>
+                  <span>8:00 AM - 4:00 PM</span>
+                </li>
+                <li>
+                  <span>Saturday</span>
+                  <span>9:00 AM - 1:00 PM</span>
+                </li>
+                <li>
+                  <span>Sunday</span>
+                  <span>Closed</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section" id="location">
+      <div class="container">
+        <h2 class="section-title">Our Location</h2>
+        <div class="map-container">
+          <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Hebron Complex, First Floor</h3>
+            <p>Machakos, Kenya</p>
+            <p>Directions will be displayed here when map is integrated</p>
+          </div>
+          <!-- In a real implementation, you would embed a Google Map here -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.552321366938!2d37.26424241475398!3d-1.5172989989617575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMzEnMDIuMyJTIDM3wrAxNicwMC4xIkU!5e0!3m2!1sen!2ske!4v1612345678901!5m2!1sen!2ske" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section class="section">
+      <div class="container">
+        <div class="emergency-section">
+          <h2>Need Immediate Legal Assistance?</h2>
+          <p>
+            For urgent legal matters that require immediate attention outside of
+            business hours, please call our emergency line.
+          </p>
+          <a href="tel:0723562484" class="btn btn-large"
+            ><i class="fas fa-phone-alt"></i> Emergency Contact: 0723562484</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How quickly will you respond to my inquiry?</span>
+            <i class="fas fa-chevron-down faq-toggle"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We strive to respond to all inquiries within 24 hours during
+              business days. For urgent matters, we recommend calling our office
+              directly at 0723562484.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to schedule a consultation?</span>
+            <i class="fas fa-chevron-down faq-toggle"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              While walk-ins are welcome, we highly recommend scheduling a
+              consultation to ensure you receive dedicated time with one of our
+              advocates. This allows us to prepare for your specific legal
+              needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What should I bring to my first consultation?</span>
+            <i class="fas fa-chevron-down faq-toggle"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Please bring any relevant documents related to your legal matter,
+              such as contracts, court papers, identification documents, and any
+              correspondence. The more information you can provide, the better
+              we can assess your situation.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there parking available at your office?</span>
+            <i class="fas fa-chevron-down faq-toggle"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, Hebron Complex offers ample parking space for our clients.
+              There is both street parking and a dedicated parking lot
+              available.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <a href="index.html" class="footer-logo">
+              <img
+                src="musyoka&mutinda logo.png"
+                alt="Mutinda & Musyoka Advocates Logo"
+              />
+            </a>
+            <p>
+              Providing exceptional legal services in Machakos and throughout
+              Kenya for over 17 years. Your trusted partners for all legal
+              matters.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Legal Insights</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-services">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="services.html#litigation"
+                  >Litigation & Dispute Resolution</a
+                >
+              </li>
+              <li>
+                <a href="services.html#corporate">Corporate & Commercial Law</a>
+              </li>
+              <li>
+                <a href="services.html#real-estate"
+                  >Conveyancing & Real Estate</a
+                >
+              </li>
+              <li>
+                <a href="services.html#family">Family & Succession Law</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i
+                ><a href="https://maps.app.goo.gl/oH6qqLpqKJx3jac66">
+                  Hebron Complex, First Floor, Machakos</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254723562484"> 0723562484</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i
+                ><a href="mailto:info@mutindaandmusyoka.co.ke">
+                  info@mutindaandmusyoka.co.ke</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; 2025 Mutinda and Musyoka Company Advocates. All Rights
+            Reserved.
+          </p>
+          <p class="credit">
+            Crafted with <span>❤</span> by
+            <a
+              href="https://codewithkaranja.github.io/createmodafrica/"
+              target="_blank"
+              rel="noopener"
+            >
+              CreateModAfrica
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
