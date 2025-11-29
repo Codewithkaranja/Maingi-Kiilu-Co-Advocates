@@ -408,8 +408,37 @@
                 Subscribe to receive updates on legal changes, court decisions,
                 and practical advice.
               </p>
-              <form class="newsletter-form">
-                <input type="email" placeholder="Your email address" required />
+
+              <form
+                action="https://formsubmit.co/info@musyokamutindaadv.co.ke"
+                method="POST"
+                class="newsletter-form"
+              >
+                <!-- Email Input -->
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+
+                <!-- Optional: Disable captcha -->
+                <input type="hidden" name="_captcha" value="false" />
+
+                <!-- Optional: Redirect to thank-you page -->
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://musyokamutindaadv.co.ke/thank-you.html"
+                />
+
+                <!-- Optional: Custom email subject -->
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Legal Newsletter Subscriber"
+                />
+
                 <button type="submit">Subscribe</button>
               </form>
             </div>
@@ -506,7 +535,7 @@
         </div>
         <div class="copyright">
           <p>
-            &copy; 2025 Mutinda and Musyoka Company Advocates. All Rights
+            &copy; 2025 Musyoka & Mutinda Company Advocates. All Rights
             Reserved.
           </p>
           <p class="credit">
