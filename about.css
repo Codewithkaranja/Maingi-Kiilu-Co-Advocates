@@ -5,6 +5,8 @@
         --gold: #b38b59;
         --light-gray: #f8f9fa;
         --white: #ffffff;
+        --mutindagreen:rgb(84, 102, 21);
+        --mutindamaroon: rgb(119, 4, 4);
       }
 
       /* Global Styles */
@@ -52,7 +54,7 @@
       }
 
       .btn:hover {
-        background-color: var(--navy);
+        background-color: rgb(119, 4, 4);
         transform: translateY(-2px);
       }
 
@@ -158,7 +160,7 @@ nav ul li .btn {
 }
 
 nav ul li .btn:hover {
-  background-color: var(--navy);
+  background-color: rgb(119, 4, 4);
 }
 
 /* ======= Responsive Styling ======= */
@@ -245,7 +247,7 @@ nav ul li .btn:hover {
 
       .mission-card,
       .vision-card {
-        background-color: var(--navy);
+        background-color: rgb(119, 4, 4);
         border-radius: 8px;
         padding: 40px 30px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -270,7 +272,7 @@ nav ul li .btn:hover {
 
       /* Team Section */
       .team {
-        background-color: var(--navy);
+        background-color: rgb(119, 4, 4);
       }
       .team h2{
         color: var(--gold);
@@ -344,7 +346,7 @@ nav ul li .btn:hover {
       .value-card {
         text-align: center;
         padding: 30px 20px;
-        background-color: var(--navy);
+        background-color: rgb(119, 4, 4);
         border-radius: 8px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         transition: transform 0.3s ease;
@@ -401,7 +403,7 @@ nav ul li .btn:hover {
       }
 
       .timeline-content {
-        background-color: var(--navy);
+        background-color: rgb(119, 4, 4);
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -726,4 +728,42 @@ copyright,
     .hero, .whatsapp-float, .mobile-menu {
         display: none !important;
     }
+}
+
+.trusted-clients {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #f8f9fc;
+}
+
+.trusted-clients .section-title {
+  font-size: 2.2rem;
+  color: var(--mutindamaroon);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.clientsSwiper {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.clientsSwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.clientsSwiper .swiper-slide img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.clientsSwiper .swiper-slide:hover {
+  transform: scale(1.05);
 }

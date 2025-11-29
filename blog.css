@@ -5,6 +5,8 @@
         --gold: #b38b59;
         --light-gray: #f8f9fa;
         --white: #ffffff;
+        --mutindagreen:rgb(84, 102, 21);
+        --mutindamaroon: rgb(119, 4, 4);
       }
 
       /* Global Styles */
@@ -52,14 +54,14 @@
       }
 
       .btn:hover {
-        background-color: var(--navy);
+        background-color: rgb(119, 4, 4);
         transform: translateY(-2px);
       }
 
       .btn-outline {
         background-color: transparent;
         border: 2px solid var(--gold);
-        color: var(--navy);
+        color: rgb(119, 4, 4);
       }
 
       .btn-outline:hover {
@@ -169,7 +171,7 @@ nav ul li .btn {
 }
 
 nav ul li .btn:hover {
-  background-color: var(--navy);
+  background-color: rgb(119, 4, 4);
 }
 
 /* ======= Responsive Styling ======= */
@@ -270,7 +272,7 @@ nav ul li .btn:hover {
 
       .featured-content {
         padding: 40px;
-        background-color: var(--navy);
+        background-color: rgb(119, 4, 4);
       }
 
       .post-meta {
@@ -326,7 +328,7 @@ nav ul li .btn:hover {
         overflow: hidden;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         transition: transform 0.3s ease;
-        background-color: var(--navy);
+        background-color: rgb(119, 4, 4);
       }
 
       .post-card:hover {
@@ -432,7 +434,7 @@ nav ul li .btn:hover {
 
       .categories-list span {
         background-color: var(--light-gray);
-        color: var(--navy);
+        color: rgb(119, 4, 4);
         padding: 2px 8px;
         border-radius: 10px;
         font-size: 0.8rem;
@@ -498,7 +500,7 @@ nav ul li .btn:hover {
 
       .tag {
         background-color: var(--light-gray);
-        color: var(--navy);
+        color: rgb(119, 4, 4);
         padding: 5px 12px;
         border-radius: 20px;
         font-size: 0.85rem;
