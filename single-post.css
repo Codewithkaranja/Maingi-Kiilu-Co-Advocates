@@ -33,6 +33,7 @@
         background-color: var(--light-gray);
         color: var(--charcoal);
         line-height: 1.6;
+        font-family: 'jost';
       }
 
       .container {
