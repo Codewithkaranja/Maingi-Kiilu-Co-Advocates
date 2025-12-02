@@ -37,21 +37,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ====== HERO BACKGROUND SLIDER ====== */
-  const bgImages = [
-    "url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=2070&q=80')",
-    "url('https://plus.unsplash.com/premium_photo-1695942301071-a70004b9e916?w=500&auto=format&fit=crop&q=60')",
-    "url('https://plus.unsplash.com/premium_photo-1698084059393-103cb8b86253?w=500&auto=format&fit=crop&q=60')",
-    "url('https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?auto=format&fit=crop&w=2070&q=80')",
-    "url('https://plus.unsplash.com/premium_photo-1694088516778-186632fc2804?w=500&auto=format&fit=crop&q=60')",
-    "url('https://images.unsplash.com/photo-1589216532372-1c2a367900d9?auto=format&fit=crop&w=2070&q=80')"
-  ];
-  let bgIndex = 0;
-  const changeHeroBg = () => {
-    heroSection.style.backgroundImage = bgImages[bgIndex];
-    bgIndex = (bgIndex + 1) % bgImages.length;
-  };
-  changeHeroBg();
-  setInterval(changeHeroBg, 4000);
+ const slides = document.querySelectorAll('.hero-slide');
+let current = 0;
+
+// Initialize first slide
+slides[current].classList.add('active');
+
+function nextSlide() {
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
+}
+
+// Change slide every 4 seconds
+setInterval(nextSlide, 5000);
 
   /* ====== TYPEWRITER EFFECT ====== */
   const texts = [

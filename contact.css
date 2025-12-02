@@ -269,6 +269,7 @@ nav ul li .btn {
   font-weight: 600;
   box-shadow: 0 6px 20px rgba(119, 4, 4, 0.3);
   margin-left: 10px;
+  color: white;
 }
 
 nav ul li .btn:hover {
@@ -867,9 +868,9 @@ footer {
 }
 
 .credit a {
-  color: var(--mutindagreen);
+  color: gold;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   transition: all 0.3s ease;
 }
 
