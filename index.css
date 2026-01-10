@@ -160,18 +160,18 @@ header {
   height: 100%;
 }
 
-.logo {
+.favicon {
   display: flex;
   align-items: center;
   text-decoration: none;
   transition: transform 0.3s ease;
 }
 
-.logo:hover {
+.favicon:hover {
   transform: scale(1.02);
 }
 
-.logo img {
+.favicon img {
   height: 90px;
   width: auto;
   object-fit: contain;
@@ -942,7 +942,7 @@ footer {
   margin-bottom: 60px;
 }
 
-.footer-logo img {
+.footer-favicon img {
   width: 150px;
   height: auto;
   object-fit: contain;
@@ -951,7 +951,7 @@ footer {
   transition: transform 0.3s ease;
 }
 
-.footer-logo:hover img {
+.footer-favicon:hover img {
   transform: scale(1.05);
 }
 
@@ -1347,13 +1347,13 @@ footer {
 }
 
 /* ==========================
-   Client Logo Slider Styling
+   Client favicon Slider Styling
 ========================== */
 /* ==========================
-   Premium Client Logo Slider
+   Premium Client favicon Slider
 ========================== */
 /* ==========================
-   Premium Client Logo Slider
+   Premium Client favicon Slider
 ========================== */
 #clients {
   margin-bottom: 60px;
@@ -1399,11 +1399,11 @@ footer {
   align-items: center;
   padding: 25px;
   transition: transform 0.3s ease;
-  animation: floatLogo 6s ease-in-out infinite;
+  animation: floatfavicon 6s ease-in-out infinite;
 }
 
 
-/* Logo styling */
+/* favicon styling */
 .clientsSwiper .swiper-slide img {
   max-width: 180px; /* increased size */
   height: auto;
@@ -1421,8 +1421,8 @@ footer {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* Floating animation for logos */
-@keyframes floatLogo {
+/* Floating animation for favicons */
+@keyframes floatfavicon {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
@@ -1701,8 +1701,8 @@ footer {
   min-height: 300px;
 }
 
-/* Logo Circle */
-.logo-wrapper {
+/* favicon Circle */
+.favicon-wrapper {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -1715,14 +1715,14 @@ footer {
   background-color: black;
 }
 
-.client-logo {
+.client-favicon {
   width: 70%;
   height: 70%;
   object-fit: contain;
   transition: transform 0.3s;
 }
 
-.client-card:hover .client-logo {
+.client-card:hover .client-favicon {
   transform: scale(1.1);
 }
 
@@ -1757,7 +1757,7 @@ footer {
     padding: 30px 15px 15px 15px;
     min-height: auto;
   }
-  .logo-wrapper {
+  .favicon-wrapper {
     width: 70px;
     height: 70px;
     margin-top: -50px;

@@ -188,18 +188,18 @@ header {
   height: 100%;
 }
 
-.logo {
+.favicon {
   display: flex;
   align-items: center;
   text-decoration: none;
   transition: transform 0.3s ease;
 }
 
-.logo:hover {
+.favicon:hover {
   transform: scale(1.02);
 }
 
-.logo img {
+.favicon img {
   height: 90px;
   width: auto;
   object-fit: contain;
@@ -1010,7 +1010,7 @@ footer {
   z-index: 2;
 }
 
-.footer-logo img {
+.footer-favicon img {
   width: 150px;
   height: auto;
   object-fit: contain;
@@ -1018,7 +1018,7 @@ footer {
   transition: all 0.4s ease;
 }
 
-.footer-logo:hover img {
+.footer-favicon:hover img {
   transform: scale(1.05);
 }
 

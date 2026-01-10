@@ -224,25 +224,25 @@ header {
   padding: 0 var(--space-lg);
 }
 
-/* Logo with Animation */
-.logo {
+/* favicon with Animation */
+.favicon {
   position: relative;
   display: inline-block;
 }
 
-.logo img {
+.favicon img {
   height: 70px;
   width: auto;
   transition: all var(--transition-base);
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
-.logo:hover img {
+.favicon:hover img {
   transform: scale(1.05) rotate(-2deg);
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
 }
 
-.logo::after {
+.favicon::after {
   content: '';
   position: absolute;
   bottom: -0.5rem;
@@ -254,7 +254,7 @@ header {
   transition: width var(--transition-base);
 }
 
-.logo:hover::after {
+.favicon:hover::after {
   width: 100%;
 }
 
@@ -738,14 +738,14 @@ footer::before {
   color: white;
 }
 
-.footer-logo img {
+.footer-favicon img {
   height: 60px;
   margin-bottom: var(--space-lg);
   filter: brightness(0) invert(1);
   transition: transform var(--transition-base);
 }
 
-.footer-logo:hover img {
+.footer-favicon:hover img {
   transform: scale(1.05);
 }
 

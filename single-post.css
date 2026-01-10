@@ -48,14 +48,14 @@
         align-items: center;
       }
 
-      .logo {
+      .favicon {
         font-size: 1.8rem;
         font-weight: 700;
         display: flex;
         align-items: center;
       }
 
-      .logo span {
+      .favicon span {
         color: var(--gold);
       }
 
@@ -369,7 +369,7 @@
         z-index: 2;
       }
 
-      .footer-logo img {
+      .footer-favicon img {
         width: 200px;
         height: auto;
         object-fit: contain;
@@ -377,7 +377,7 @@
         transition: all 0.4s ease;
       }
 
-      .footer-logo:hover img {
+      .footer-favicon:hover img {
         transform: scale(1.05);
       }
 

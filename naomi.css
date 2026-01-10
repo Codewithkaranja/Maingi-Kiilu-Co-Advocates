@@ -93,14 +93,14 @@ header {
   padding: 0 20px;
 }
 
-.logo img {
+.favicon img {
   height: 65px;
   width: auto;
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-.logo img:hover {
+.favicon img:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
@@ -481,7 +481,7 @@ footer::before {
   margin-bottom: 3rem;
 }
 
-.footer-logo img {
+.footer-favicon img {
   height: 60px;
   margin-bottom: 1.5rem;
   filter: brightness(0) invert(1);
